@@ -1,0 +1,22 @@
+.contentFrame {
+    min-width: inherit;
+}
+
+.ant-layout-header {
+    background-color: #0a2069;
+}
+
+.ant-layout-sider {
+    background-color: #0a2069;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background-color: #1C54B6;
+}
+
+.menubutt {
+    background-color: #1C54B6;
+    border-color: #1C54B6;
+    width: initial;
+    height: inherit;
+}

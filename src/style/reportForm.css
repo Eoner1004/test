@@ -1,0 +1,60 @@
+.formZone {
+    width: 385px;
+    background-color: white;
+    height: 900px;
+}
+
+.formZone h4 {
+    position: relative;
+    right: 39%;
+    margin-bottom: 20px;
+}
+
+.formZone form {
+    width: max-content;
+}
+
+.formZone .ant-row {
+    margin: 20px 10px 20px 10px;
+}
+
+.pWrapper p {
+    margin-bottom: 0;
+}
+
+.caseheader {
+    margin-right: 20px;
+}
+
+.caseheader .ant-row {
+    margin: 10px;
+    padding: 10px 0 10px 0;
+    border: 1px solid #E3E4E8;
+    border-radius: 5px;
+    background: #E3E4E8;
+}
+
+.casewrapper {
+    box-shadow: 0 5px 5px -1px #F3F3F3;
+    margin-right: 18px;
+}
+
+.casewrapper .ant-row {
+    margin: 10px 10px 20px 10px;
+    padding: 20px 0 10px 0;
+    border: 1px solid #E3E4E8;
+    border-radius: 5px;
+}
+
+#industry {
+    float: left;
+    margin-left: 1px;
+}
+
+.ant-drawer-body .ant-page-header {
+    padding-left: 0;
+}
+
+.midDiv {
+    width: 500px;
+}
