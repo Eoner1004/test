@@ -11,7 +11,7 @@
 }
 
 .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
-    background-color: #1C54B6;
+    background-color: #1C54B6!important;
 }
 
 .menubutt {

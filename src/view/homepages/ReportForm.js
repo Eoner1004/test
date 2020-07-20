@@ -36,7 +36,8 @@ class ReportForm extends Component {
     onFinish = (values) => {
         let a = moment(values.period[0]).format('YYYY-MM-DD')
         let b = moment(values.period[1]).format('YYYY-MM-DD')
-        let formData=values;
+        
+        let formData={...values};
         formData.startDate=a;
         formData.endDate=b;
         console.log(formData)
@@ -69,15 +70,15 @@ class ReportForm extends Component {
         return (
             <div style={{ backgroundImage: "url(" + require("../../public/bgpic.jpg") + ")" }}>
                 <div className='formZone'>
-                    <Form onFinish={this.onFinish}>
-                        <div style={{paddingTop:'20px',paddingLeft:'16px'}}>
-                            <ArrowLeftOutlined style={{ float: 'left', fontSize: '16px' }} onClick={this.back}/>
-                            <p style={{float:'left',marginLeft:'8px',marginBottom:'8px',paddingBottom:'8px'}}>生成报告</p>
-                        </div>
-                        <Divider style={{ margin: '8px' }} />
-                        <h4>查询案件：</h4>
-                        <Form.Item label='告警企业' name='company'>
-                            <Input placeholder='请输入企业名称搜索'></Input>
+                    <div style={{ paddingTop: '20px', paddingLeft: '16px' }}>
+                        <ArrowLeftOutlined style={{ float: 'left', fontSize: '16px' }} onClick={this.back} />
+                        <p style={{ float: 'left', marginLeft: '8px', marginBottom: '8px', paddingBottom: '8px' }}>生成报告</p>
+                    </div>
+                    <Divider style={{ margin: '8px' }} />
+                    <h4>查询案件：</h4>
+                    <Form onFinish={this.onFinish} >
+                        <Form.Item label='告警企业' name='company' style>
+                                <Input placeholder='请输入企业名称搜索'></Input>
                         </Form.Item>
                         <Form.Item label='告警时间' name='period'>
                             <RangePicker style={{ width: '100%' }} />
@@ -130,7 +131,6 @@ class ReportForm extends Component {
                     closable={false}
                     onClose={this.onClose}
                     visible={visible}
-                    maskStyle={{ background: 'transparent' }}
                     width='500'
                     zIndex='1'
                     style={{ marginTop: '30px' }}

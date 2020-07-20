@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import 'antd/dist/antd.css';
 import * as serviceWorker from './serviceWorker';
 import { ConfigProvider } from 'antd';
 import zhCN from 'antd/es/locale/zh_CN'
